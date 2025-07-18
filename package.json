@@ -1,0 +1,22 @@
+{
+  "name": "travel-blog",
+  "version": "1.0.0",
+  "description": "This is my travel blog i'm building as I progress with the \"full- stack for developers\" CodeCademy course.\r This blog shows my latest travels around the world since I discharged from the army.\r Now, remember this is only a prototype. I will upgrade this site constantly, with new designs, new technologies as I learn\r and hopefully, with more travels.\r Currently, I'm planning to implement some JS and add more pages.\r I will add pages to every adventure entry, design a nav bar, add responsiveness, and make the site more accesible.\r See you on the other side! (RIP Hillel Slovak)",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoeiAbulafya/Travel-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoeiAbulafya/Travel-Blog/issues"
+  },
+  "homepage": "https://github.com/RoeiAbulafya/Travel-Blog#readme",
+  "devDependencies": {
+    "mocha": "^11.7.1"
+  }
+}
