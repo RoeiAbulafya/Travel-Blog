@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="seychelles.css" rel="stylesheet">
+    <link href="destinations.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
         rel="stylesheet">
@@ -39,12 +39,22 @@
 
         <h2>Picturesque Moments</h2>
         <div class="image-gallery">
-            <img src="images/sey-beach.jpg" alt="Anse Source d'Argent Beach, La Digue">
-            <img src="images/sey-coco.jpg" alt="Coco De Mare, Looks like a butt">
-            <img src="images/sey-dogo.jpg" alt="A cute dog we met in La Digue">
-            <img src="images/sey-turtle.jpg" alt="Tzvika's team burging through Sinai">
-            <img src="images/sey-us.jpg" alt="Picture of us with a giant tortoise!">
-            <img src="images/Seychelles-jungle.jpg" alt="The mighty jungle in the middle of Mahe">
+            <div class="card"><img src="images/sey-beach.jpg" alt="Anse Source d'Argent Beach, La Digue"
+                    class="gallery-image"></div>
+            <div class="card"><img src="images/sey-coco.jpg" alt="Coco De Mare, Looks like a butt"
+                    class="gallery-image"></div>
+            <div class="card"><img src="images/sey-dogo.jpg" alt="A cute dog we met in La Digue" class="gallery-image">
+            </div>
+            <div class="card"><img src="images/sey-turtle.jpg" alt="Tzvika's team burging through Sinai"
+                    class="gallery-image"></div>
+            <div class="card"><img src="images/sey-us.jpg" alt="Picture of us with a giant tortoise!"
+                    class="gallery-image"></div>
+            <div class="card"><img src="images/Seychelles-jungle.jpg" alt="The mighty jungle in the middle of Mahe"
+                    class="gallery-image"></div>
+        </div>
+
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+            <img src="" alt="Full Screen Image" id="fullscreenImage">
         </div>
 
         <h2>Favourite Places:</h2>
@@ -150,5 +160,6 @@
         </div>
     </div>
 </footer>
+<script src="destinations.js"></script>
 
 </html>

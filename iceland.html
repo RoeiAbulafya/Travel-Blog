@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="iceland.css" rel="stylesheet">
+    <link href="destinations.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
         rel="stylesheet">
@@ -35,13 +35,16 @@
 
         <h2>Picturesque Moments</h2>
         <div class="image-gallery">
-            <img src="images/ice-aurora.jpg" alt="The Nortern Lights">
-            <img src="images/ice-godafoss.jpg" alt="One of the magnifiecent waterfalls of iceland">
-            <img src="images/ice-iceberg.jpg" alt="We hiked on a glacier">
-            <img src="images/ice-river.jpg" alt="A river as usual">
-            <img src="images/ice-sunset.jpg" alt="Twilight zone">
-            <img src="images/ice-water.jpg" alt="A great valley">
+            <div class="card"><img src="images/ice-aurora.jpg" alt="The Nortern Lights" class="gallery-image"></div>
+            <div class="card"><img src="images/ice-godafoss.jpg" alt="One of the magnifiecent waterfalls of iceland" class="gallery-image"></div>
+            <div class="card"><img src="images/ice-iceberg.jpg" alt="We hiked on a glacier" class="gallery-image"></div>
+            <div class="card"><img src="images/ice-river.jpg" alt="A river as usual" class="gallery-image"></div>
+            <div class="card"><img src="images/ice-sunset.jpg" alt="Twilight zone" class="gallery-image"></div>
+            <div class="card"><img src="images/ice-water.jpg" alt="A great valley" class="gallery-image"></div>
         </div>
+
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <img src="" alt="Full Screen Image" id="fullscreenImage"></div>
 
         <h2>Favourite Places:</h2>
         <div class="itinerary">
@@ -60,8 +63,7 @@
                     <strong>waterfalls</strong>
                     <p> There are so many waterfalls in Iceland but I swear, each is unique and beautiful on its own.
                         Some of the best, in my opinion are: Godafoss in the north, Gullfoss in the golden circle,
-                        Skogafoss in the south,
-                        and Svartifoss by Skaftafell glacier.
+                        Skogafoss in the south, and Svartifoss by Skaftafell glacier.
                     </p>
                 </li>
                 <li>
@@ -70,7 +72,7 @@
                         in a single day,
                         go to the golden ring. It's not far from Reykjavik and has a great reserve called Þingvellir, a
                         beautiful crater (Kerid)
-                        , great waterfalls like Gullfoss and even have the original Geysir! It's a great trip, albeit
+                        , great waterfalls like Gullfoss and even have the original Geysir! It's a great trip, although
                         very touristy.
                     </p>
                 </li>
@@ -169,5 +171,5 @@
         </div>
     </div>
 </footer>
-
+<script src="destinations.js"></script>
 </html>
