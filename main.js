@@ -1,0 +1,3 @@
+const sent = () =>{
+    alert("Sent!")
+}
