@@ -46,7 +46,8 @@
 
             <!-- Travel Card 2 -->
             <div class="travel-card">
-                <img src="./images/athens-img.jpg" alt="Athens Image">
+                <a href="athens.html">
+                <img src="./images/athens-img.jpg" alt="Athens Image"></a>
                 <div class="travel-card-content">
                     <h3>Athens</h3>
                     <p>Greece is one of my favourite places on earth. The food, the history, the culture, the cheap
@@ -96,26 +97,31 @@
         </div>
     </main>
 
-    <!--Form Section-->
-    <section class="contact-form">
-        <h2> What should my next adventure be?</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Your Idea:</label>
-                <textarea id="message" name="message" placeholder="Enter your suggestion" required></textarea>
-            </div>
-            <button type="submit" class="submit-button" onclick="sent()">Send Message</button>
-        </form>
-    </section>
+     <div class="form-card">
+        <h1 class="form-heading">What should my next adventure be?</h1>
 
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" id="name" name="name" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email:</label>
+                <input type="email" id="email" name="email" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label">Your Idea:</label>
+                <textarea id="message" name="message" rows="4" required class="form-input"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">
+                Send Message
+            </button>
+        </form>
+    </div>
+    <div id="messageBoxContainer"></div>
 
     <!-- Footer Section -->
     <footer class="footer">

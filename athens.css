@@ -1,0 +1,331 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+/* --- Header Section --- */
+.header {
+    grid-area: header;
+    background-color: #325b69;
+    color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+}
+
+.header-content {
+    display: flex;
+    flex-grow: 1;
+    /* Allow content to grow */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        /* Two columns for desktop */
+    }
+}
+
+.header-logo {
+    font-family: "Sriracha", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    z-index: 2;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+}
+
+/* Section Headings */
+h1.destination-title {
+    font-size: 3em;
+    color: #212529;
+    /* Darkest gray for main title */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #495057;
+    /* Dark gray for section titles */
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #dde3e9;
+    /* Light underline for sections */
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow images to wrap to the next line */
+    gap: 15px;
+    /* Space between images */
+    justify-content: center;
+    /* Center images horizontally */
+    margin-bottom: 40px;
+}
+
+.image-gallery img {
+    width: 100%;
+    /* Default to full width on small screens */
+    max-width: 280px;
+    /* Max width for individual images */
+    height: 200px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Crop images to fit without distortion */
+    border-radius: 8px;
+    /* Rounded corners for images */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for images */
+    transition: transform 0.2s ease-in-out;
+    /* Smooth hover effect */
+}
+
+.image-gallery img:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+/* Itinerary and Tips Sections - Exotic Vibe Colors */
+.itinerary ul,
+.tips ul {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+}
+
+/* Itinerary specific styling (Ocean/Sky Blue) */
+.itinerary li {
+    background-color: #e0f7fa;
+    /* Light cyan for itinerary (clear water) */
+    border-left: 6px solid #00bcd4;
+    /* Turquoise accent border */
+    padding: 18px 25px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.itinerary li:hover {
+    background-color: #b2ebf2;
+    /* Slightly darker cyan on hover */
+    border-left-color: #00838f;
+    /* Darker turquoise on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.itinerary li strong {
+    color: #00838f;
+    /* Darker turquoise for day titles */
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Tips specific styling (Tropical Green) */
+.tips li {
+    background-color: #f0fcf5;
+    /* Light mint green for tips (lush vegetation) */
+    border-left: 6px solid #8bc34a;
+    /* Light green accent border */
+    padding: 18px 25px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.tips li:hover {
+    background-color: #dcedc8;
+    /* Slightly darker mint green on hover */
+    border-left-color: #33691e;
+    /* Darker green on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tips li strong {
+    color: #33691e;
+    /* Darker green for tip titles */
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 0 15px;
+        /* Add some side margin on small screens */
+    }
+
+    h1.destination-title {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+        /* Images take full width on very small screens */
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1.destination-title {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* --- Footer Section --- */
+.footer {
+    grid-area: footer;
+    background-color: #1f2937;
+    /* Dark background */
+    color: #ffffff;
+    padding: 1.5rem;
+    margin-top: auto;
+    /* Push footer to the bottom if content is short */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    /* Flex for content within footer */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* Default for mobile */
+    gap: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-grow: 1;
+    /* Allow content to grow */
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* Default for mobile */
+    text-align: center;
+    width: 100%;
+    /* Take full width of footer */
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        /* Two columns for desktop */
+        text-align: left;
+    }
+}
+
+.contact-info h4,
+.socials h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+    font-size: 0.875rem;
+    color: white;
+}
+
+.contact-info a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+.social-links a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #93c5fd;
+}
+
