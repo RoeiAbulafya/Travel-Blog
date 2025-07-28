@@ -1,3 +1,4 @@
+//The credit for this feature belongs to Omer Nadler the one and only.
 document.addEventListener('DOMContentLoaded', () => {
     const galleryImages = document.querySelectorAll('.gallery-image');
     const fullscreenOverlay = document.getElementById('fullscreenOverlay');
@@ -5,16 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     galleryImages.forEach(image => {
         image.addEventListener('click', () => {
-            fullscreenImage.src = image.src; // Set the full-screen image source
-            fullscreenOverlay.classList.add('active'); // Show the overlay
+            fullscreenImage.src = image.src; 
+            fullscreenOverlay.classList.add('active'); 
             document.body.style.overflow = 'hidden'; // Prevent scrolling the background
         });
     });
 
-    // Close full-screen when clicking on the overlay
+    // Close full-screen when clicking 
     fullscreenOverlay.addEventListener('click', () => {
-        fullscreenOverlay.classList.remove('active'); // Hide the overlay
-        fullscreenImage.src = ''; // Clear the image source (optional, but good practice)
+        fullscreenOverlay.classList.remove('active'); // Hide 
+        fullscreenImage.src = ''; // Clear 
         document.body.style.overflow = ''; // Re-enable background scrolling
     });
 
